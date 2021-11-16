@@ -32,10 +32,14 @@ template();
 
 document.querySelector('.startbtn').addEventListener('click', () => {
   window.location.hash = '#/register';
+  const logintTemplate= document.querySelector('.containerall');
+  logintTemplate.style.display="none"
+  
 });
 
 document.querySelector('.btngoogle').addEventListener('click', () => {
   loginWithGoogle();
+  console.log("aqui estoy");
 });
 
 document.querySelector('.loginbtn').addEventListener('click', () => {
@@ -47,4 +51,5 @@ function userLogin (){
   const password=document.getElementByid('contresana').value;
   console.log(email);
   console.log(password);
-};
+};*/
+
