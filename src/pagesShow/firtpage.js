@@ -1,6 +1,9 @@
-//import{userLogin, loginWhitGoogle} from "../lib/firebase.js";
+import{whithGoogle} from "../lib/index.js";
 export const login = () => {
     window.location.hash = '/firtpage';
+    const containerMainScreen = document.createElement('div');
+    containerMainScreen.className = 'section';
+
     const loginPage = `
     
     <section class ="containerall">
@@ -19,13 +22,16 @@ export const login = () => {
          <input class ="inputtwo" id="contrasena" type="password" placeholder="Contraseña">
           <p class="get">¿Olvidaste tu Contraseña?</p>
           <button class="loginbtn"type="button">Iniciar Sesion</button>
-         <p class="get">Ingresar con</p>
          </form>
-         <button  class="btngoogle" type="button" title="Ingresar con Google" ><img src="imagenes/icons8-logoo.png"></button>
+         <p class="get">Ingresar con</p>
+         <button  class="btngoogle" id ="googlebtn" type="button" title="Ingresar con Google" ><img src="imagenes/icons8-logoo.png"></button>
        <button class="startbtn" type="button">
         <a href='#/registerPage'>Registrarse</a></button>
      </main>
    </section>`
-
-   return loginPage;
+   containerMainScreen.innerHTML = loginPage
+   containerMainScreen.querySelector('#googlebtn').addEventListener('click', () => {
+    whithGoogle();
+  });
+   return containerMainScreen;
 }
