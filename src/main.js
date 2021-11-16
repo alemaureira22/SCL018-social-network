@@ -1,7 +1,7 @@
 //import { logicalExpression } from '@babel/types'; 
 
 const root = document.getElementById('root');
-const logintTemplate = () => {
+const template = () => {
 root.innerHTML = `
     <section class="containerall">
     <header>
@@ -26,7 +26,7 @@ root.innerHTML = `
      </main>
    </section> `;
 };
-logintTemplate();
+template();
 
 
 
