@@ -1,0 +1,127 @@
+
+.allcontainer{
+    display: flex;
+    background-color:rgb(182, 235, 168,0.5); ;
+    padding: 2%;
+    flex-direction: column;
+    align-items: center;
+    border-radius:4%;
+    height: 86%;
+    width: 30%;
+    position: absolute;
+    left: 0.3%;
+    top:6%;
+}
+
+.icons{
+    width: 13%;
+    position: absolute;
+    left: 44%;
+    top:9%;
+}
+.logo{
+    font-size: 26px;
+    font-family:'vibur',cursive,arial;
+    font-weight: bold;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(253, 246, 251, 0.795);  
+}
+h1{
+    
+    text-align: center;
+    font-size: 120%;
+}
+
+.registers {
+    
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 7px;
+    border:none;
+    border-radius: 5px;
+    
+}
+
+.botonregister{
+    border-radius: 8px;
+    background: #fa290e56;
+    padding: 8px;
+    width: 50%;
+    margin-left:10%;
+    margin-right: 10%;
+    cursor: pointer;
+    border-bottom: 50%;
+    top:60%;
+}
+.botonregister:hover{
+    background:rgb(206, 245, 206);
+
+}
+.link{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    
+}
+p{
+    text-align:  center;
+}
+
+.date{
+    font-size: 80%;
+}
+.imgclas{
+    position: relative;
+    min-width: 30px;
+    text-align:start;
+    color: #999;
+    right:  35%;
+    top: 2.1em;
+}
+@media screen and (max-width: 620px){
+ 
+    .allcontainer{
+        display: flex;
+        background-color:rgb(182, 235, 168); ;
+        padding: 20%;
+        border-radius:0%;
+        height: 86%;
+        width: 60%;
+        position: absolute;
+        left: 0;
+        top:0%;
+        
+        }
+        
+        .inputForm{
+        width: 78vw;
+        height:70vh;
+    
+        }
+        .botonregister{
+           
+        padding: 8px;
+        width: 50%;
+           
+        }
+        p{
+        font-size:90%;
+        padding:6%
+            
+        }
+        .icons{
+       
+        top:13%;
+    }
+    .logo{
+        margin:0;
+    }
+    }

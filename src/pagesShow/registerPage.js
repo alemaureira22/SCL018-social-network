@@ -1,29 +1,30 @@
 import{createU} from "../lib/index.js";
 
 export const register = () =>{
- window.location.hash = '/registerPage';
- 
- const divRegister = document.createElement("div");
-
- divRegister.className = 'div';
-
-
-const pageRegister  = `
-
+   window.location.hash = '/registerPage';
+   const divRegister = document.createElement("div");
+   divRegister.className = 'div';
+  const pageRegister  = `
+<img class="containerfondo" src="imagenes/Diseño fondo.png">
 <div class="allcontainer">
 <div class="registerForm">
-<h1>Registrate</h1>
-</div>
-<div class="inputForm">
-<p>Ingrese su nombre</p>
-<input type="text" id="nameRegister">
-<p>Igrese su email</p>
-<input type="email" id="mailR" placeholder="correo@example.com">
-<p>Ingrese una contraseña</p>
-<input type="password" id="passwordR" placeholder="max 8 caract alfanumericos">
-<p>Confirma tu contraseña</p>
-<button type="submit" id="btnRegister" class="botonregister">Crear Cuenta</button>
-</div>
+<header>
+<img class="icons"src="imagenes/logo4.png">
+<p class="logo">Easy &nbsp eggie</p>
+</header>
+<form class="inputForm">
+  <h1>Registrate</h1>
+    <img class="imgclas"src="imagenes/usuario.png">
+    <input type="text" id="nameRegister" class="registers"placeholder="Ingrese su nombre">
+    <img class="imgclas"src="imagenes/icons8-email2.png">
+    <input type="email" id="mailR" class="registers" placeholder="correo@example.com">
+    <img class="imgclas"src="imagenes/icons8-cand.png">
+     <input type="password" id="passwordR" class="registers" placeholder="max 8 caract alfanumericos">
+     <br>
+     <button type="submit" id="btnRegister" class="botonregister">Crear Cuenta</button>
+   <p> Al registrarte, aceptas nuestras condiciones de uso y politicas de privacidad</p>
+   <p> ¿Ya tienes cuenta?<a class ="link" href="#/firtpage">Inicia sesión</a></p>
+</form>
 </div> `
 
 
