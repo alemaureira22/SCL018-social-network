@@ -6,17 +6,17 @@
     flex-direction: column;
     align-items: center;
     border-radius:4%;
-    height: 86%;
+    height: 80%;
     width: 30%;
     position: absolute;
-    left: 0.3%;
+    left: 1%;
     top:6%;
 }
 
 .icons{
-    width: 13%;
+    width: 10%;
     position: absolute;
-    left: 44%;
+    left: 45.5%;
     top:9%;
 }
 .logo{
@@ -65,7 +65,7 @@ h1{
     background:rgb(206, 245, 206);
 
 }
-.link{
+.linkRegister{
     font-weight: 600;
     text-decoration: none;
     color: black;

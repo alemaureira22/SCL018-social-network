@@ -1,3 +1,12 @@
+/*.section-post{
+ background-image: url("https://i.pinimg.com/564x/33/4f/44/334f4447defff599ecccbdc638beacef.jpg"),
+                   url("https://i.pinimg.com/564x/33/4f/44/334f4447defff599ecccbdc638beacef.jpg");
+
+                   background-repeat: round;
+                   background-size: 759px auto;
+                   background-attachment: fixed;
+}*/
+
 figure{
     margin: 0;   
 }
@@ -7,46 +16,329 @@ figure{
 
 }
 
-    .container-second{
+.container-second{
     display: flex;  
-    justify-content: space-between;
-    padding: 7px;
+    justify-content: center;
 }
-.icodate,
-.iconR,
+.icodate{
+    width: 200%;
+}
+.iconR{
+    width: 200%;
+}
 .iconsPerson{
-padding-inline-end: 1em;
+    width: 200%;
 }
-.logo-image{
-    width: 2rem;
+.logo-imagen{
+    width: 4rem;
     position: relative;
-    left: 32%;
-    bottom: 2.5rem;
+    left: 30%;
+    bottom: 5rem;
  }   
+.logo-name{
+  font-size:35px;
+} 
 .contenedor-perfil2{
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 420px;
+ 
+}
+#post, #postt, #posttt{
+    width: 40rem;
+    height: 3rem;
+    border: 0.6px solid rgb(90, 87, 87)
+}
+#postt{
+    
+    border-top-left-radius: 17px 17px;
+    border-top-right-radius: 17px 17px;
+   }
+   #post{
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+   }
+textarea{
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    resize:both;
 
 }
-#post{
-    width: 600px;
-    height: 50px;
-}
-
-.contentBox{
-    background-color: lightcoral;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+ .recet{
+     display: flex;
+     flex-direction: column;
+    
+ }
+ 
 
 /*Diseño de las publicaciones*/
 .toPost{
-    
-    width: 700px;
     font-display: flex;
     align-content: center;
     justify-content: center;
-    left:500px;
+    padding: 15px;    
+    
+}
+#postLook{
+    resize:both; 
+ 
+ }
+.contentButtons{
+    display: flex;  
+    padding: 7px;
+}
+
+
+.buttonsContent{
+    position:relative;
+    left:435px;
+}
+.watchPost{
+    display: flex;
+    flex-direction: column;
+    background-color: ivory;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 1rem;
+    width:40vw;
+}
+.iconshome{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 150px 150px;
+     height: 430px;
+     width: 300px;
+     align-items: center;
+     justify-content: center;
+     background-image: url("https://i.pinimg.com/564x/33/4f/44/334f4447defff599ecccbdc638beacef.jpg");
+     background-position: center center;
+     position: fixed;
+     margin-left:50px;
+     bottom: 50px;
+     border-radius: 20px;
+}
+
+.iconshome a{
+    font-family:'vibur',cursive,arial;
+    font-size: 30px;
+}
+ 
+.contentBox{
+    
+    display: flex;
+    justify-content:space-between;
+}
+.botones-post{
+    cursor: pointer;
+    position: relative;
+    border-radius: 7px;
+    font-size: 15px;
+    left: 270px;
+    background:linear-gradient(90deg, yellow, orange 35%, #ed116b);
+    color: white;
+}
+.returnBtn{
+    background-color: rgba(221, 75, 8, 0.685);
+    border-radius: 15px;
+    text-decoration: none;
+}
+    
+.save{
+    display: none;
+}
+.conteinerUser{
+    margin: 0;
+}
+.userpost{
+    width:40px;
+    position:relative;
+    top:11px;
+  }
+  .btn-like, .icon-pencil, .icon-bin{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .btn-like{
+      animation: palpitar 2s linear infinite alternate;
+      will-change: transform;
+      transform: rotate(45dec) scale(1);
+  }
+  .icon-pencil:hover{
+    transform: translateY(-30%);
+    transform: rotate(-20deg);
+
+  }
+  .icon-pencil, .icon-bin{
+    font-size:18px;
+    position:relative;
+    top:15px;
+
+  }
+
+  @keyframes palpitar {
+    0% {
+        transform: rotate(4deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(4deg) scale(1.5);
+    }
+    100%{
+        transform: rotate(4deg) scale(1);
+    }
+}
+/*lado de os link*/
+.link{
+    display: flex;
+    flex-direction: column;
+    background-color: #fcd391;
+    position:relative;
+    bottom:85px;
+    margin-right:50px;
+    border-radius: 20px;
+    width: 300px;
+}
+.linkId{
+    position:absolute;
+    left:22px;
+  }
+
+.link a img{
+    margin: 40px;
+    margin-top:20px;
+    width: 180px;
+}
+.titleLink{
+    font-size: 30px;
+    font-family: vibur;
+}
+
+
+
+
+
+@media screen and (max-width: 620px){
+   
+    
+    .header-image{
+        height: 10vh;
+    
+    }
+ 
+    .logo-imagen{
+        width: 3rem;
+        bottom: 4rem;
+     }   
+    .logo-name{
+      font-size:30px;
+    } 
+    .contenedor-perfil2{
+      left: 0;
+     
+    }
+    #post, #postt, #posttt{
+        width: 20rem;
+        height: 2rem;
+    }
+  
+    /*Diseño de las publicaciones*/
+    .toPost{
+        padding: 0;    
+        
+    }
+
+    
+    .buttonsContent{
+        position:relative;
+        left:0;
+    }
+    .watchPost{
+        width:75vw;
+    }
+    .iconshome{
+        display: none;
+       
+    }
+ 
+    .iconshome{
+        grid:none;
+        display:flex;
+        justify-content:space-around;
+        height:40px;
+        border-radius:0;
+        left:0;
+        right:0;
+        width:100%;
+         margin-left:0;
+         background-image:none;
+          position:relative;
+       }
+   
+   
+   .iconshome a{
+       font-size: 15px;
+    
+   } 
+    .contentBox{
+
+        flex-direction: column;
+    }
+    .botones-post{
+        left:3px;
+        margin-top:3px;
+    }
+
+        
+    .save{
+        display: none;
+        border-radius:6px;
+    }
+    
+    .conteinerUser{
+        margin: 0;
+        padding: 0;
+    }
+    .userpost{
+        width:20px;
+        top:10px;
+      }
+     
+
+
+      .icon-pencil, .icon-bin{
+        font-size:16px;
+        top:22px;
+        left:75px;
+    
+      }
+    
+    /*lado de os link*/
+    .link{
+    
+        bottom:0;
+        margin-right:0;
+        border-radius: 0;
+        width:100%;
+    }
+
+    .linkId{
+        margin:0;
+         background-color: #fcd391;
+         left:0;
+      }
+  
+    .link a img{
+        margin: 10px;
+        margin-top:10px;
+        width: 70px;
+    }
+    .titleLink{
+        font-size: 20px;
+        font-family: vibur;
+    }
+
 }

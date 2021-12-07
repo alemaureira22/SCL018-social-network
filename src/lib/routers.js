@@ -2,6 +2,8 @@ import {login} from '../pagesShow/firtpage.js';
 import {register} from '../pagesShow/registerPage.js';
 import { post } from "../pagesShow/postPage.js";
 import { look } from "../pagesShow/lookPost.js";
+//import { menuProfile} from "../pagesShow/profile.js";
+
 //import { onAuth } from "../lib/index.js"
 
 
@@ -19,7 +21,8 @@ export const router = (hash) => {
   } else if (hash === "#/postPage") {
     containerRoot.appendChild(post());
   } else if (hash === "#/lookPost") {
-    containerRoot.appendChild(look());
+   containerRoot.appendChild(look());
+  //}else if (hash === "#/profile") {
+  //  containerRoot.appendChild(menuProfile())
   }
-
 }

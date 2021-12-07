@@ -1,11 +1,11 @@
-import{createU} from "../lib/index.js";
+import { createU } from "../lib/index.js";
 
-export const register = () =>{
-   window.location.hash = '/registerPage';
-   const divRegister = document.createElement("div");
-   divRegister.className = 'div';
-  const pageRegister  = `
-<img class="containerfondo" src="imagenes/Diseño fondo.png">
+export const register = () => {
+  window.location.hash = '/registerPage';
+  const divRegister = document.createElement("div");
+  divRegister.className = 'div';
+  const pageRegister = `
+<img class="containerfondo" src="imagenes/fondoimagen1.jpeg">
 <div class="allcontainer">
 <div class="registerForm">
 <header>
@@ -23,19 +23,22 @@ export const register = () =>{
      <br>
      <button type="submit" id="btnRegister" class="botonregister">Crear Cuenta</button>
    <p> Al registrarte, aceptas nuestras condiciones de uso y politicas de privacidad</p>
-   <p> ¿Ya tienes cuenta?<a class ="link" href="#/firtpage">Inicia sesión</a></p>
+   <p> ¿Ya tienes cuenta?<a class ="linkRegister" href="#/firtpage">Inicia sesión</a></p>
 </form>
 </div> `
 
 
-divRegister.innerHTML= pageRegister;
 
-divRegister.querySelector('#btnRegister').addEventListener('click', () => {
+
+  divRegister.innerHTML = pageRegister;
+
+  divRegister.querySelector('#btnRegister').addEventListener('click', () => {
     const email = document.querySelector('#mailR').value;
     const password = document.querySelector('#passwordR').value;
-    createU(email, password);
+    const nameUser = document.querySelector('#nameRegister').value;
+    createU(email, password, nameUser);
   });
-return divRegister;
+  return divRegister;
 
 };
 
